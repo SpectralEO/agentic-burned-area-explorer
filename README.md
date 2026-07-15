@@ -92,7 +92,6 @@ Put credentials in `.env` or `backend/.env`; do not place credentials in fronten
 
 - [Architecture](docs/architecture.md)
 - [Docker and configuration](docs/docker.md)
-- [GitHub publishing guide](docs/github.md)
 
 ## Verification
 
