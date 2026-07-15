@@ -1,0 +1,29 @@
+id: ghsl_exposure_context
+name: GHSL Exposure Context
+description: Create a cautious built-up and population exposure proxy for a selected
+  cluster.
+required_context:
+- selected_cluster
+steps:
+- id: ghsl
+  tool: compute_ghsl_exposure
+- id: ghsl_card
+  tool: create_finding_card
+  uses: ghsl
+  card:
+    type: contextual_finding
+    title: GHSL-style exposure proxy
+    pinned: false
+suggested_next_actions:
+- id: add_aod
+  label: Add AOD context
+  skill_id: aod_context
+  requires:
+  - selected_cluster
+- id: generate_report
+  label: Generate finding brief
+  skill_id: wildfire_finding_brief
+quality_checks:
+- source_dataset_present
+- method_statement_present
+- caveats_present

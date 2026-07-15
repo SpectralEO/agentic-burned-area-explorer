@@ -1,0 +1,63 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - WEA_DATA_DIR=/app/app/data/demo
+      - WEA_REAL_DATA_DIR=/app/app/data/real
+      - WEA_DB_PATH=/app/app/data/investigations.sqlite
+      - WEA_STAC_MODE=${WEA_STAC_MODE:-real}
+      - WEA_STAC_PROVIDER=${WEA_STAC_PROVIDER:-earth-search}
+      - WEA_STAC_PROVIDER_ORDER=${WEA_STAC_PROVIDER_ORDER:-}
+      - WEA_STAC_API_URL=${WEA_STAC_API_URL:-https://earth-search.aws.element84.com/v1}
+      - WEA_STAC_EARTH_SEARCH_API_URL=${WEA_STAC_EARTH_SEARCH_API_URL:-https://earth-search.aws.element84.com/v1}
+      - WEA_STAC_PLANETARY_COMPUTER_API_URL=${WEA_STAC_PLANETARY_COMPUTER_API_URL:-https://planetarycomputer.microsoft.com/api/stac/v1}
+      - WEA_STAC_TIMEOUT_SECONDS=${WEA_STAC_TIMEOUT_SECONDS:-20}
+      - WEA_STAC_MAX_ITEMS=${WEA_STAC_MAX_ITEMS:-8}
+      - CDSE_USERNAME=${CDSE_USERNAME:-}
+      - CDSE_PASSWORD=${CDSE_PASSWORD:-}
+      - CDSE_CLIENT_ID=${CDSE_CLIENT_ID:-cdse-public}
+      - CDSE_CLIENT_SECRET=${CDSE_CLIENT_SECRET:-}
+      - BA300_AUTO_SYNC=${BA300_AUTO_SYNC:-false}
+      - BA300_SOURCE_MODE=${BA300_SOURCE_MODE:-auto}
+      - BA300_STAC_COLLECTION=${BA300_STAC_COLLECTION:-clms_ba_global_300m_monthly_v4_cog}
+      - BA300_BYOC_COLLECTION_ID=${BA300_BYOC_COLLECTION_ID:-b8b617c6-182f-427e-a86c-23fc36ac6098}
+      - WEA_PLANETARY_COMPUTER_SIGN_URL=${WEA_PLANETARY_COMPUTER_SIGN_URL:-https://planetarycomputer.microsoft.com/api/sas/v1/sign}
+      - WEA_IMAGERY_RENDER_MODE=${WEA_IMAGERY_RENDER_MODE:-tiler}
+      - WEA_TILER_PUBLIC_BASE=${WEA_TILER_PUBLIC_BASE:-http://localhost:8001}
+      - WEA_API_PUBLIC_BASE=${WEA_API_PUBLIC_BASE:-http://localhost:8000/api}
+      - WEA_TILER_INTERNAL_BASE=${WEA_TILER_INTERNAL_BASE:-http://tiler:8000}
+      - WEA_WORKFLOW_SKILLS_DIR=${WEA_WORKFLOW_SKILLS_DIR:-/app/workflow_skills}
+      - WEA_AGENT_MODE=${WEA_AGENT_MODE:-rule_based}
+    volumes:
+      - ./backend/app/data:/app/app/data
+    depends_on:
+      - tiler
+
+  tiler:
+    build: ./tiler
+    ports:
+      - "8001:8000"
+    environment:
+      - PORT=8000
+      - WEA_TILER_CACHE_DIR=/cache/wea-tiler
+      - AWS_NO_SIGN_REQUEST=YES
+      - GDAL_DISABLE_READDIR_ON_OPEN=EMPTY_DIR
+      - GDAL_HTTP_MULTIRANGE=YES
+      - CPL_VSIL_CURL_ALLOWED_EXTENSIONS=.tif,.tiff,.TIF,.TIFF,.jp2,.JP2
+    volumes:
+      - ./tiler-cache:/cache/wea-tiler
+      - ./backend/app/data/real:/app/app/data/real:ro
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_BASE=http://localhost:8000/api
+    depends_on:
+      - backend
+      - tiler

@@ -1,0 +1,1642 @@
+{
+  "GR-2024-001": [
+    {
+      "cluster_id": "GR-2024-001",
+      "item_id": "S2A_DEMO_GR-2024-001_PRE",
+      "collection": "sentinel-2-l2a",
+      "sensor_key": "sentinel-2",
+      "sensor": "Sentinel-2 L2A",
+      "role": "pre-fire",
+      "datetime": "2023-07-30T09:20:00Z",
+      "cloud_cover": 4.2,
+      "coverage": 0.99,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.44,
+              40.64
+            ],
+            [
+              26.56,
+              40.64
+            ],
+            [
+              26.56,
+              41.42
+            ],
+            [
+              25.44,
+              41.42
+            ],
+            [
+              25.44,
+              40.64
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        25.44,
+        40.64,
+        26.56,
+        41.42
+      ],
+      "assets": {
+        "visual": "mock://sentinel-2/S2A_DEMO_GR-2024-001_PRE/visual.tif",
+        "blue": "mock://sentinel-2/S2A_DEMO_GR-2024-001_PRE/blue.tif",
+        "green": "mock://sentinel-2/S2A_DEMO_GR-2024-001_PRE/green.tif",
+        "red": "mock://sentinel-2/S2A_DEMO_GR-2024-001_PRE/red.tif",
+        "nir": "mock://sentinel-2/S2A_DEMO_GR-2024-001_PRE/nir.tif",
+        "swir16": "mock://sentinel-2/S2A_DEMO_GR-2024-001_PRE/swir16.tif",
+        "swir22": "mock://sentinel-2/S2A_DEMO_GR-2024-001_PRE/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Low-cloud Sentinel-2 image before the inferred burn window; covers cluster footprint."
+    },
+    {
+      "cluster_id": "GR-2024-001",
+      "item_id": "S2A_DEMO_GR-2024-001_EVENT",
+      "collection": "sentinel-2-l2a",
+      "sensor_key": "sentinel-2",
+      "sensor": "Sentinel-2 L2A",
+      "role": "during-window",
+      "datetime": "2023-08-23T09:20:00Z",
+      "cloud_cover": 8.5,
+      "coverage": 0.99,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.44,
+              40.64
+            ],
+            [
+              26.56,
+              40.64
+            ],
+            [
+              26.56,
+              41.42
+            ],
+            [
+              25.44,
+              41.42
+            ],
+            [
+              25.44,
+              40.64
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        25.44,
+        40.64,
+        26.56,
+        41.42
+      ],
+      "assets": {
+        "visual": "mock://sentinel-2/S2A_DEMO_GR-2024-001_EVENT/visual.tif",
+        "blue": "mock://sentinel-2/S2A_DEMO_GR-2024-001_EVENT/blue.tif",
+        "green": "mock://sentinel-2/S2A_DEMO_GR-2024-001_EVENT/green.tif",
+        "red": "mock://sentinel-2/S2A_DEMO_GR-2024-001_EVENT/red.tif",
+        "nir": "mock://sentinel-2/S2A_DEMO_GR-2024-001_EVENT/nir.tif",
+        "swir16": "mock://sentinel-2/S2A_DEMO_GR-2024-001_EVENT/swir16.tif",
+        "swir22": "mock://sentinel-2/S2A_DEMO_GR-2024-001_EVENT/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Sentinel-2 event-window image intended for natural-colour/SWIR fire-front highlight review."
+    },
+    {
+      "cluster_id": "GR-2024-001",
+      "item_id": "S2B_DEMO_GR-2024-001_POST",
+      "collection": "sentinel-2-l2a",
+      "sensor_key": "sentinel-2",
+      "sensor": "Sentinel-2 L2A",
+      "role": "post-fire",
+      "datetime": "2023-09-10T09:20:00Z",
+      "cloud_cover": 6.8,
+      "coverage": 0.98,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.44,
+              40.64
+            ],
+            [
+              26.56,
+              40.64
+            ],
+            [
+              26.56,
+              41.42
+            ],
+            [
+              25.44,
+              41.42
+            ],
+            [
+              25.44,
+              40.64
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        25.44,
+        40.64,
+        26.56,
+        41.42
+      ],
+      "assets": {
+        "visual": "mock://sentinel-2/S2B_DEMO_GR-2024-001_POST/visual.tif",
+        "blue": "mock://sentinel-2/S2B_DEMO_GR-2024-001_POST/blue.tif",
+        "green": "mock://sentinel-2/S2B_DEMO_GR-2024-001_POST/green.tif",
+        "red": "mock://sentinel-2/S2B_DEMO_GR-2024-001_POST/red.tif",
+        "nir": "mock://sentinel-2/S2B_DEMO_GR-2024-001_POST/nir.tif",
+        "swir16": "mock://sentinel-2/S2B_DEMO_GR-2024-001_POST/swir16.tif",
+        "swir22": "mock://sentinel-2/S2B_DEMO_GR-2024-001_POST/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Low-cloud Sentinel-2 image after the inferred burn window; covers cluster footprint."
+    },
+    {
+      "cluster_id": "GR-2024-001",
+      "item_id": "LC09_DEMO_GR-2024-001_PRE",
+      "collection": "landsat-c2-l2",
+      "sensor_key": "landsat",
+      "sensor": "Landsat Collection 2 Level-2",
+      "role": "pre-fire",
+      "datetime": "2023-07-24T09:20:00Z",
+      "cloud_cover": 9.6,
+      "coverage": 1.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.44,
+              40.64
+            ],
+            [
+              26.56,
+              40.64
+            ],
+            [
+              26.56,
+              41.42
+            ],
+            [
+              25.44,
+              41.42
+            ],
+            [
+              25.44,
+              40.64
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        25.44,
+        40.64,
+        26.56,
+        41.42
+      ],
+      "assets": {
+        "blue": "mock://landsat/LC09_DEMO_GR-2024-001_PRE/blue.tif",
+        "green": "mock://landsat/LC09_DEMO_GR-2024-001_PRE/green.tif",
+        "red": "mock://landsat/LC09_DEMO_GR-2024-001_PRE/red.tif",
+        "nir08": "mock://landsat/LC09_DEMO_GR-2024-001_PRE/nir08.tif",
+        "swir16": "mock://landsat/LC09_DEMO_GR-2024-001_PRE/swir16.tif",
+        "swir22": "mock://landsat/LC09_DEMO_GR-2024-001_PRE/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Landsat fallback before the inferred burn window."
+    },
+    {
+      "cluster_id": "GR-2024-001",
+      "item_id": "LC09_DEMO_GR-2024-001_POST",
+      "collection": "landsat-c2-l2",
+      "sensor_key": "landsat",
+      "sensor": "Landsat Collection 2 Level-2",
+      "role": "post-fire",
+      "datetime": "2023-09-15T09:20:00Z",
+      "cloud_cover": 12.4,
+      "coverage": 1.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.44,
+              40.64
+            ],
+            [
+              26.56,
+              40.64
+            ],
+            [
+              26.56,
+              41.42
+            ],
+            [
+              25.44,
+              41.42
+            ],
+            [
+              25.44,
+              40.64
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        25.44,
+        40.64,
+        26.56,
+        41.42
+      ],
+      "assets": {
+        "blue": "mock://landsat/LC09_DEMO_GR-2024-001_POST/blue.tif",
+        "green": "mock://landsat/LC09_DEMO_GR-2024-001_POST/green.tif",
+        "red": "mock://landsat/LC09_DEMO_GR-2024-001_POST/red.tif",
+        "nir08": "mock://landsat/LC09_DEMO_GR-2024-001_POST/nir08.tif",
+        "swir16": "mock://landsat/LC09_DEMO_GR-2024-001_POST/swir16.tif",
+        "swir22": "mock://landsat/LC09_DEMO_GR-2024-001_POST/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Landsat fallback after the inferred burn window."
+    },
+    {
+      "cluster_id": "GR-2024-001",
+      "item_id": "MODIS_DEMO_GR-2024-001_CONTEXT",
+      "collection": "modis-demo-context",
+      "sensor_key": "modis",
+      "sensor": "MODIS surface reflectance",
+      "role": "during-window",
+      "datetime": "2023-08-24T09:20:00Z",
+      "cloud_cover": 18.0,
+      "coverage": 1.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.200000000000003,
+              40.4
+            ],
+            [
+              26.799999999999997,
+              40.4
+            ],
+            [
+              26.799999999999997,
+              41.660000000000004
+            ],
+            [
+              25.200000000000003,
+              41.660000000000004
+            ],
+            [
+              25.200000000000003,
+              40.4
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        25.200000000000003,
+        40.4,
+        26.799999999999997,
+        41.660000000000004
+      ],
+      "assets": {
+        "red": "mock://modis/MODIS_DEMO_GR-2024-001_CONTEXT/red.tif",
+        "green": "mock://modis/MODIS_DEMO_GR-2024-001_CONTEXT/green.tif",
+        "blue": "mock://modis/MODIS_DEMO_GR-2024-001_CONTEXT/blue.tif",
+        "nir": "mock://modis/MODIS_DEMO_GR-2024-001_CONTEXT/nir.tif",
+        "swir": "mock://modis/MODIS_DEMO_GR-2024-001_CONTEXT/swir.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Coarse MODIS-style regional context only; not cluster-level validation."
+    }
+  ],
+  "GR-2024-002": [
+    {
+      "cluster_id": "GR-2024-002",
+      "item_id": "S2A_DEMO_GR-2024-002_PRE",
+      "collection": "sentinel-2-l2a",
+      "sensor_key": "sentinel-2",
+      "sensor": "Sentinel-2 L2A",
+      "role": "pre-fire",
+      "datetime": "2024-06-25T09:20:00Z",
+      "cloud_cover": 4.2,
+      "coverage": 0.99,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.560000000000002,
+              38.01
+            ],
+            [
+              24.0,
+              38.01
+            ],
+            [
+              24.0,
+              38.35
+            ],
+            [
+              23.560000000000002,
+              38.35
+            ],
+            [
+              23.560000000000002,
+              38.01
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        23.560000000000002,
+        38.01,
+        24.0,
+        38.35
+      ],
+      "assets": {
+        "visual": "mock://sentinel-2/S2A_DEMO_GR-2024-002_PRE/visual.tif",
+        "blue": "mock://sentinel-2/S2A_DEMO_GR-2024-002_PRE/blue.tif",
+        "green": "mock://sentinel-2/S2A_DEMO_GR-2024-002_PRE/green.tif",
+        "red": "mock://sentinel-2/S2A_DEMO_GR-2024-002_PRE/red.tif",
+        "nir": "mock://sentinel-2/S2A_DEMO_GR-2024-002_PRE/nir.tif",
+        "swir16": "mock://sentinel-2/S2A_DEMO_GR-2024-002_PRE/swir16.tif",
+        "swir22": "mock://sentinel-2/S2A_DEMO_GR-2024-002_PRE/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Low-cloud Sentinel-2 image before the inferred burn window; covers cluster footprint."
+    },
+    {
+      "cluster_id": "GR-2024-002",
+      "item_id": "S2A_DEMO_GR-2024-002_EVENT",
+      "collection": "sentinel-2-l2a",
+      "sensor_key": "sentinel-2",
+      "sensor": "Sentinel-2 L2A",
+      "role": "during-window",
+      "datetime": "2024-07-19T09:20:00Z",
+      "cloud_cover": 8.5,
+      "coverage": 0.99,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.560000000000002,
+              38.01
+            ],
+            [
+              24.0,
+              38.01
+            ],
+            [
+              24.0,
+              38.35
+            ],
+            [
+              23.560000000000002,
+              38.35
+            ],
+            [
+              23.560000000000002,
+              38.01
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        23.560000000000002,
+        38.01,
+        24.0,
+        38.35
+      ],
+      "assets": {
+        "visual": "mock://sentinel-2/S2A_DEMO_GR-2024-002_EVENT/visual.tif",
+        "blue": "mock://sentinel-2/S2A_DEMO_GR-2024-002_EVENT/blue.tif",
+        "green": "mock://sentinel-2/S2A_DEMO_GR-2024-002_EVENT/green.tif",
+        "red": "mock://sentinel-2/S2A_DEMO_GR-2024-002_EVENT/red.tif",
+        "nir": "mock://sentinel-2/S2A_DEMO_GR-2024-002_EVENT/nir.tif",
+        "swir16": "mock://sentinel-2/S2A_DEMO_GR-2024-002_EVENT/swir16.tif",
+        "swir22": "mock://sentinel-2/S2A_DEMO_GR-2024-002_EVENT/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Sentinel-2 event-window image intended for natural-colour/SWIR fire-front highlight review."
+    },
+    {
+      "cluster_id": "GR-2024-002",
+      "item_id": "S2B_DEMO_GR-2024-002_POST",
+      "collection": "sentinel-2-l2a",
+      "sensor_key": "sentinel-2",
+      "sensor": "Sentinel-2 L2A",
+      "role": "post-fire",
+      "datetime": "2024-08-06T09:20:00Z",
+      "cloud_cover": 6.8,
+      "coverage": 0.98,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.560000000000002,
+              38.01
+            ],
+            [
+              24.0,
+              38.01
+            ],
+            [
+              24.0,
+              38.35
+            ],
+            [
+              23.560000000000002,
+              38.35
+            ],
+            [
+              23.560000000000002,
+              38.01
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        23.560000000000002,
+        38.01,
+        24.0,
+        38.35
+      ],
+      "assets": {
+        "visual": "mock://sentinel-2/S2B_DEMO_GR-2024-002_POST/visual.tif",
+        "blue": "mock://sentinel-2/S2B_DEMO_GR-2024-002_POST/blue.tif",
+        "green": "mock://sentinel-2/S2B_DEMO_GR-2024-002_POST/green.tif",
+        "red": "mock://sentinel-2/S2B_DEMO_GR-2024-002_POST/red.tif",
+        "nir": "mock://sentinel-2/S2B_DEMO_GR-2024-002_POST/nir.tif",
+        "swir16": "mock://sentinel-2/S2B_DEMO_GR-2024-002_POST/swir16.tif",
+        "swir22": "mock://sentinel-2/S2B_DEMO_GR-2024-002_POST/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Low-cloud Sentinel-2 image after the inferred burn window; covers cluster footprint."
+    },
+    {
+      "cluster_id": "GR-2024-002",
+      "item_id": "LC09_DEMO_GR-2024-002_PRE",
+      "collection": "landsat-c2-l2",
+      "sensor_key": "landsat",
+      "sensor": "Landsat Collection 2 Level-2",
+      "role": "pre-fire",
+      "datetime": "2024-06-19T09:20:00Z",
+      "cloud_cover": 9.6,
+      "coverage": 1.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.560000000000002,
+              38.01
+            ],
+            [
+              24.0,
+              38.01
+            ],
+            [
+              24.0,
+              38.35
+            ],
+            [
+              23.560000000000002,
+              38.35
+            ],
+            [
+              23.560000000000002,
+              38.01
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        23.560000000000002,
+        38.01,
+        24.0,
+        38.35
+      ],
+      "assets": {
+        "blue": "mock://landsat/LC09_DEMO_GR-2024-002_PRE/blue.tif",
+        "green": "mock://landsat/LC09_DEMO_GR-2024-002_PRE/green.tif",
+        "red": "mock://landsat/LC09_DEMO_GR-2024-002_PRE/red.tif",
+        "nir08": "mock://landsat/LC09_DEMO_GR-2024-002_PRE/nir08.tif",
+        "swir16": "mock://landsat/LC09_DEMO_GR-2024-002_PRE/swir16.tif",
+        "swir22": "mock://landsat/LC09_DEMO_GR-2024-002_PRE/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Landsat fallback before the inferred burn window."
+    },
+    {
+      "cluster_id": "GR-2024-002",
+      "item_id": "LC09_DEMO_GR-2024-002_POST",
+      "collection": "landsat-c2-l2",
+      "sensor_key": "landsat",
+      "sensor": "Landsat Collection 2 Level-2",
+      "role": "post-fire",
+      "datetime": "2024-08-11T09:20:00Z",
+      "cloud_cover": 12.4,
+      "coverage": 1.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.560000000000002,
+              38.01
+            ],
+            [
+              24.0,
+              38.01
+            ],
+            [
+              24.0,
+              38.35
+            ],
+            [
+              23.560000000000002,
+              38.35
+            ],
+            [
+              23.560000000000002,
+              38.01
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        23.560000000000002,
+        38.01,
+        24.0,
+        38.35
+      ],
+      "assets": {
+        "blue": "mock://landsat/LC09_DEMO_GR-2024-002_POST/blue.tif",
+        "green": "mock://landsat/LC09_DEMO_GR-2024-002_POST/green.tif",
+        "red": "mock://landsat/LC09_DEMO_GR-2024-002_POST/red.tif",
+        "nir08": "mock://landsat/LC09_DEMO_GR-2024-002_POST/nir08.tif",
+        "swir16": "mock://landsat/LC09_DEMO_GR-2024-002_POST/swir16.tif",
+        "swir22": "mock://landsat/LC09_DEMO_GR-2024-002_POST/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Landsat fallback after the inferred burn window."
+    },
+    {
+      "cluster_id": "GR-2024-002",
+      "item_id": "MODIS_DEMO_GR-2024-002_CONTEXT",
+      "collection": "modis-demo-context",
+      "sensor_key": "modis",
+      "sensor": "MODIS surface reflectance",
+      "role": "during-window",
+      "datetime": "2024-07-20T09:20:00Z",
+      "cloud_cover": 18.0,
+      "coverage": 1.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.320000000000004,
+              37.769999999999996
+            ],
+            [
+              24.24,
+              37.769999999999996
+            ],
+            [
+              24.24,
+              38.59
+            ],
+            [
+              23.320000000000004,
+              38.59
+            ],
+            [
+              23.320000000000004,
+              37.769999999999996
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        23.320000000000004,
+        37.769999999999996,
+        24.24,
+        38.59
+      ],
+      "assets": {
+        "red": "mock://modis/MODIS_DEMO_GR-2024-002_CONTEXT/red.tif",
+        "green": "mock://modis/MODIS_DEMO_GR-2024-002_CONTEXT/green.tif",
+        "blue": "mock://modis/MODIS_DEMO_GR-2024-002_CONTEXT/blue.tif",
+        "nir": "mock://modis/MODIS_DEMO_GR-2024-002_CONTEXT/nir.tif",
+        "swir": "mock://modis/MODIS_DEMO_GR-2024-002_CONTEXT/swir.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Coarse MODIS-style regional context only; not cluster-level validation."
+    }
+  ],
+  "GR-2024-003": [
+    {
+      "cluster_id": "GR-2024-003",
+      "item_id": "S2A_DEMO_GR-2024-003_PRE",
+      "collection": "sentinel-2-l2a",
+      "sensor_key": "sentinel-2",
+      "sensor": "Sentinel-2 L2A",
+      "role": "pre-fire",
+      "datetime": "2024-07-28T09:20:00Z",
+      "cloud_cover": 4.2,
+      "coverage": 0.99,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.560000000000002,
+              37.505
+            ],
+            [
+              22.08,
+              37.505
+            ],
+            [
+              22.08,
+              37.855
+            ],
+            [
+              21.560000000000002,
+              37.855
+            ],
+            [
+              21.560000000000002,
+              37.505
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        21.560000000000002,
+        37.505,
+        22.08,
+        37.855
+      ],
+      "assets": {
+        "visual": "mock://sentinel-2/S2A_DEMO_GR-2024-003_PRE/visual.tif",
+        "blue": "mock://sentinel-2/S2A_DEMO_GR-2024-003_PRE/blue.tif",
+        "green": "mock://sentinel-2/S2A_DEMO_GR-2024-003_PRE/green.tif",
+        "red": "mock://sentinel-2/S2A_DEMO_GR-2024-003_PRE/red.tif",
+        "nir": "mock://sentinel-2/S2A_DEMO_GR-2024-003_PRE/nir.tif",
+        "swir16": "mock://sentinel-2/S2A_DEMO_GR-2024-003_PRE/swir16.tif",
+        "swir22": "mock://sentinel-2/S2A_DEMO_GR-2024-003_PRE/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Low-cloud Sentinel-2 image before the inferred burn window; covers cluster footprint."
+    },
+    {
+      "cluster_id": "GR-2024-003",
+      "item_id": "S2A_DEMO_GR-2024-003_EVENT",
+      "collection": "sentinel-2-l2a",
+      "sensor_key": "sentinel-2",
+      "sensor": "Sentinel-2 L2A",
+      "role": "during-window",
+      "datetime": "2024-08-21T09:20:00Z",
+      "cloud_cover": 8.5,
+      "coverage": 0.99,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.560000000000002,
+              37.505
+            ],
+            [
+              22.08,
+              37.505
+            ],
+            [
+              22.08,
+              37.855
+            ],
+            [
+              21.560000000000002,
+              37.855
+            ],
+            [
+              21.560000000000002,
+              37.505
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        21.560000000000002,
+        37.505,
+        22.08,
+        37.855
+      ],
+      "assets": {
+        "visual": "mock://sentinel-2/S2A_DEMO_GR-2024-003_EVENT/visual.tif",
+        "blue": "mock://sentinel-2/S2A_DEMO_GR-2024-003_EVENT/blue.tif",
+        "green": "mock://sentinel-2/S2A_DEMO_GR-2024-003_EVENT/green.tif",
+        "red": "mock://sentinel-2/S2A_DEMO_GR-2024-003_EVENT/red.tif",
+        "nir": "mock://sentinel-2/S2A_DEMO_GR-2024-003_EVENT/nir.tif",
+        "swir16": "mock://sentinel-2/S2A_DEMO_GR-2024-003_EVENT/swir16.tif",
+        "swir22": "mock://sentinel-2/S2A_DEMO_GR-2024-003_EVENT/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Sentinel-2 event-window image intended for natural-colour/SWIR fire-front highlight review."
+    },
+    {
+      "cluster_id": "GR-2024-003",
+      "item_id": "S2B_DEMO_GR-2024-003_POST",
+      "collection": "sentinel-2-l2a",
+      "sensor_key": "sentinel-2",
+      "sensor": "Sentinel-2 L2A",
+      "role": "post-fire",
+      "datetime": "2024-09-08T09:20:00Z",
+      "cloud_cover": 6.8,
+      "coverage": 0.98,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.560000000000002,
+              37.505
+            ],
+            [
+              22.08,
+              37.505
+            ],
+            [
+              22.08,
+              37.855
+            ],
+            [
+              21.560000000000002,
+              37.855
+            ],
+            [
+              21.560000000000002,
+              37.505
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        21.560000000000002,
+        37.505,
+        22.08,
+        37.855
+      ],
+      "assets": {
+        "visual": "mock://sentinel-2/S2B_DEMO_GR-2024-003_POST/visual.tif",
+        "blue": "mock://sentinel-2/S2B_DEMO_GR-2024-003_POST/blue.tif",
+        "green": "mock://sentinel-2/S2B_DEMO_GR-2024-003_POST/green.tif",
+        "red": "mock://sentinel-2/S2B_DEMO_GR-2024-003_POST/red.tif",
+        "nir": "mock://sentinel-2/S2B_DEMO_GR-2024-003_POST/nir.tif",
+        "swir16": "mock://sentinel-2/S2B_DEMO_GR-2024-003_POST/swir16.tif",
+        "swir22": "mock://sentinel-2/S2B_DEMO_GR-2024-003_POST/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Low-cloud Sentinel-2 image after the inferred burn window; covers cluster footprint."
+    },
+    {
+      "cluster_id": "GR-2024-003",
+      "item_id": "LC09_DEMO_GR-2024-003_PRE",
+      "collection": "landsat-c2-l2",
+      "sensor_key": "landsat",
+      "sensor": "Landsat Collection 2 Level-2",
+      "role": "pre-fire",
+      "datetime": "2024-07-22T09:20:00Z",
+      "cloud_cover": 9.6,
+      "coverage": 1.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.560000000000002,
+              37.505
+            ],
+            [
+              22.08,
+              37.505
+            ],
+            [
+              22.08,
+              37.855
+            ],
+            [
+              21.560000000000002,
+              37.855
+            ],
+            [
+              21.560000000000002,
+              37.505
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        21.560000000000002,
+        37.505,
+        22.08,
+        37.855
+      ],
+      "assets": {
+        "blue": "mock://landsat/LC09_DEMO_GR-2024-003_PRE/blue.tif",
+        "green": "mock://landsat/LC09_DEMO_GR-2024-003_PRE/green.tif",
+        "red": "mock://landsat/LC09_DEMO_GR-2024-003_PRE/red.tif",
+        "nir08": "mock://landsat/LC09_DEMO_GR-2024-003_PRE/nir08.tif",
+        "swir16": "mock://landsat/LC09_DEMO_GR-2024-003_PRE/swir16.tif",
+        "swir22": "mock://landsat/LC09_DEMO_GR-2024-003_PRE/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Landsat fallback before the inferred burn window."
+    },
+    {
+      "cluster_id": "GR-2024-003",
+      "item_id": "LC09_DEMO_GR-2024-003_POST",
+      "collection": "landsat-c2-l2",
+      "sensor_key": "landsat",
+      "sensor": "Landsat Collection 2 Level-2",
+      "role": "post-fire",
+      "datetime": "2024-09-13T09:20:00Z",
+      "cloud_cover": 12.4,
+      "coverage": 1.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.560000000000002,
+              37.505
+            ],
+            [
+              22.08,
+              37.505
+            ],
+            [
+              22.08,
+              37.855
+            ],
+            [
+              21.560000000000002,
+              37.855
+            ],
+            [
+              21.560000000000002,
+              37.505
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        21.560000000000002,
+        37.505,
+        22.08,
+        37.855
+      ],
+      "assets": {
+        "blue": "mock://landsat/LC09_DEMO_GR-2024-003_POST/blue.tif",
+        "green": "mock://landsat/LC09_DEMO_GR-2024-003_POST/green.tif",
+        "red": "mock://landsat/LC09_DEMO_GR-2024-003_POST/red.tif",
+        "nir08": "mock://landsat/LC09_DEMO_GR-2024-003_POST/nir08.tif",
+        "swir16": "mock://landsat/LC09_DEMO_GR-2024-003_POST/swir16.tif",
+        "swir22": "mock://landsat/LC09_DEMO_GR-2024-003_POST/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Landsat fallback after the inferred burn window."
+    },
+    {
+      "cluster_id": "GR-2024-003",
+      "item_id": "MODIS_DEMO_GR-2024-003_CONTEXT",
+      "collection": "modis-demo-context",
+      "sensor_key": "modis",
+      "sensor": "MODIS surface reflectance",
+      "role": "during-window",
+      "datetime": "2024-08-22T09:20:00Z",
+      "cloud_cover": 18.0,
+      "coverage": 1.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.320000000000004,
+              37.265
+            ],
+            [
+              22.319999999999997,
+              37.265
+            ],
+            [
+              22.319999999999997,
+              38.095
+            ],
+            [
+              21.320000000000004,
+              38.095
+            ],
+            [
+              21.320000000000004,
+              37.265
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        21.320000000000004,
+        37.265,
+        22.319999999999997,
+        38.095
+      ],
+      "assets": {
+        "red": "mock://modis/MODIS_DEMO_GR-2024-003_CONTEXT/red.tif",
+        "green": "mock://modis/MODIS_DEMO_GR-2024-003_CONTEXT/green.tif",
+        "blue": "mock://modis/MODIS_DEMO_GR-2024-003_CONTEXT/blue.tif",
+        "nir": "mock://modis/MODIS_DEMO_GR-2024-003_CONTEXT/nir.tif",
+        "swir": "mock://modis/MODIS_DEMO_GR-2024-003_CONTEXT/swir.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Coarse MODIS-style regional context only; not cluster-level validation."
+    }
+  ],
+  "GR-2024-004": [
+    {
+      "cluster_id": "GR-2024-004",
+      "item_id": "S2A_DEMO_GR-2024-004_PRE",
+      "collection": "sentinel-2-l2a",
+      "sensor_key": "sentinel-2",
+      "sensor": "Sentinel-2 L2A",
+      "role": "pre-fire",
+      "datetime": "2024-08-16T09:20:00Z",
+      "cloud_cover": 4.2,
+      "coverage": 0.99,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.180000000000003,
+              39.080000000000005
+            ],
+            [
+              22.639999999999997,
+              39.080000000000005
+            ],
+            [
+              22.639999999999997,
+              39.4
+            ],
+            [
+              22.180000000000003,
+              39.4
+            ],
+            [
+              22.180000000000003,
+              39.080000000000005
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        22.180000000000003,
+        39.080000000000005,
+        22.639999999999997,
+        39.4
+      ],
+      "assets": {
+        "visual": "mock://sentinel-2/S2A_DEMO_GR-2024-004_PRE/visual.tif",
+        "blue": "mock://sentinel-2/S2A_DEMO_GR-2024-004_PRE/blue.tif",
+        "green": "mock://sentinel-2/S2A_DEMO_GR-2024-004_PRE/green.tif",
+        "red": "mock://sentinel-2/S2A_DEMO_GR-2024-004_PRE/red.tif",
+        "nir": "mock://sentinel-2/S2A_DEMO_GR-2024-004_PRE/nir.tif",
+        "swir16": "mock://sentinel-2/S2A_DEMO_GR-2024-004_PRE/swir16.tif",
+        "swir22": "mock://sentinel-2/S2A_DEMO_GR-2024-004_PRE/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Low-cloud Sentinel-2 image before the inferred burn window; covers cluster footprint."
+    },
+    {
+      "cluster_id": "GR-2024-004",
+      "item_id": "S2A_DEMO_GR-2024-004_EVENT",
+      "collection": "sentinel-2-l2a",
+      "sensor_key": "sentinel-2",
+      "sensor": "Sentinel-2 L2A",
+      "role": "during-window",
+      "datetime": "2024-09-09T09:20:00Z",
+      "cloud_cover": 8.5,
+      "coverage": 0.99,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.180000000000003,
+              39.080000000000005
+            ],
+            [
+              22.639999999999997,
+              39.080000000000005
+            ],
+            [
+              22.639999999999997,
+              39.4
+            ],
+            [
+              22.180000000000003,
+              39.4
+            ],
+            [
+              22.180000000000003,
+              39.080000000000005
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        22.180000000000003,
+        39.080000000000005,
+        22.639999999999997,
+        39.4
+      ],
+      "assets": {
+        "visual": "mock://sentinel-2/S2A_DEMO_GR-2024-004_EVENT/visual.tif",
+        "blue": "mock://sentinel-2/S2A_DEMO_GR-2024-004_EVENT/blue.tif",
+        "green": "mock://sentinel-2/S2A_DEMO_GR-2024-004_EVENT/green.tif",
+        "red": "mock://sentinel-2/S2A_DEMO_GR-2024-004_EVENT/red.tif",
+        "nir": "mock://sentinel-2/S2A_DEMO_GR-2024-004_EVENT/nir.tif",
+        "swir16": "mock://sentinel-2/S2A_DEMO_GR-2024-004_EVENT/swir16.tif",
+        "swir22": "mock://sentinel-2/S2A_DEMO_GR-2024-004_EVENT/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Sentinel-2 event-window image intended for natural-colour/SWIR fire-front highlight review."
+    },
+    {
+      "cluster_id": "GR-2024-004",
+      "item_id": "S2B_DEMO_GR-2024-004_POST",
+      "collection": "sentinel-2-l2a",
+      "sensor_key": "sentinel-2",
+      "sensor": "Sentinel-2 L2A",
+      "role": "post-fire",
+      "datetime": "2024-09-27T09:20:00Z",
+      "cloud_cover": 6.8,
+      "coverage": 0.98,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.180000000000003,
+              39.080000000000005
+            ],
+            [
+              22.639999999999997,
+              39.080000000000005
+            ],
+            [
+              22.639999999999997,
+              39.4
+            ],
+            [
+              22.180000000000003,
+              39.4
+            ],
+            [
+              22.180000000000003,
+              39.080000000000005
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        22.180000000000003,
+        39.080000000000005,
+        22.639999999999997,
+        39.4
+      ],
+      "assets": {
+        "visual": "mock://sentinel-2/S2B_DEMO_GR-2024-004_POST/visual.tif",
+        "blue": "mock://sentinel-2/S2B_DEMO_GR-2024-004_POST/blue.tif",
+        "green": "mock://sentinel-2/S2B_DEMO_GR-2024-004_POST/green.tif",
+        "red": "mock://sentinel-2/S2B_DEMO_GR-2024-004_POST/red.tif",
+        "nir": "mock://sentinel-2/S2B_DEMO_GR-2024-004_POST/nir.tif",
+        "swir16": "mock://sentinel-2/S2B_DEMO_GR-2024-004_POST/swir16.tif",
+        "swir22": "mock://sentinel-2/S2B_DEMO_GR-2024-004_POST/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Low-cloud Sentinel-2 image after the inferred burn window; covers cluster footprint."
+    },
+    {
+      "cluster_id": "GR-2024-004",
+      "item_id": "LC09_DEMO_GR-2024-004_PRE",
+      "collection": "landsat-c2-l2",
+      "sensor_key": "landsat",
+      "sensor": "Landsat Collection 2 Level-2",
+      "role": "pre-fire",
+      "datetime": "2024-08-10T09:20:00Z",
+      "cloud_cover": 9.6,
+      "coverage": 1.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.180000000000003,
+              39.080000000000005
+            ],
+            [
+              22.639999999999997,
+              39.080000000000005
+            ],
+            [
+              22.639999999999997,
+              39.4
+            ],
+            [
+              22.180000000000003,
+              39.4
+            ],
+            [
+              22.180000000000003,
+              39.080000000000005
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        22.180000000000003,
+        39.080000000000005,
+        22.639999999999997,
+        39.4
+      ],
+      "assets": {
+        "blue": "mock://landsat/LC09_DEMO_GR-2024-004_PRE/blue.tif",
+        "green": "mock://landsat/LC09_DEMO_GR-2024-004_PRE/green.tif",
+        "red": "mock://landsat/LC09_DEMO_GR-2024-004_PRE/red.tif",
+        "nir08": "mock://landsat/LC09_DEMO_GR-2024-004_PRE/nir08.tif",
+        "swir16": "mock://landsat/LC09_DEMO_GR-2024-004_PRE/swir16.tif",
+        "swir22": "mock://landsat/LC09_DEMO_GR-2024-004_PRE/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Landsat fallback before the inferred burn window."
+    },
+    {
+      "cluster_id": "GR-2024-004",
+      "item_id": "LC09_DEMO_GR-2024-004_POST",
+      "collection": "landsat-c2-l2",
+      "sensor_key": "landsat",
+      "sensor": "Landsat Collection 2 Level-2",
+      "role": "post-fire",
+      "datetime": "2024-10-02T09:20:00Z",
+      "cloud_cover": 12.4,
+      "coverage": 1.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.180000000000003,
+              39.080000000000005
+            ],
+            [
+              22.639999999999997,
+              39.080000000000005
+            ],
+            [
+              22.639999999999997,
+              39.4
+            ],
+            [
+              22.180000000000003,
+              39.4
+            ],
+            [
+              22.180000000000003,
+              39.080000000000005
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        22.180000000000003,
+        39.080000000000005,
+        22.639999999999997,
+        39.4
+      ],
+      "assets": {
+        "blue": "mock://landsat/LC09_DEMO_GR-2024-004_POST/blue.tif",
+        "green": "mock://landsat/LC09_DEMO_GR-2024-004_POST/green.tif",
+        "red": "mock://landsat/LC09_DEMO_GR-2024-004_POST/red.tif",
+        "nir08": "mock://landsat/LC09_DEMO_GR-2024-004_POST/nir08.tif",
+        "swir16": "mock://landsat/LC09_DEMO_GR-2024-004_POST/swir16.tif",
+        "swir22": "mock://landsat/LC09_DEMO_GR-2024-004_POST/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Landsat fallback after the inferred burn window."
+    },
+    {
+      "cluster_id": "GR-2024-004",
+      "item_id": "MODIS_DEMO_GR-2024-004_CONTEXT",
+      "collection": "modis-demo-context",
+      "sensor_key": "modis",
+      "sensor": "MODIS surface reflectance",
+      "role": "during-window",
+      "datetime": "2024-09-10T09:20:00Z",
+      "cloud_cover": 18.0,
+      "coverage": 1.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.940000000000005,
+              38.84
+            ],
+            [
+              22.879999999999995,
+              38.84
+            ],
+            [
+              22.879999999999995,
+              39.64
+            ],
+            [
+              21.940000000000005,
+              39.64
+            ],
+            [
+              21.940000000000005,
+              38.84
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        21.940000000000005,
+        38.84,
+        22.879999999999995,
+        39.64
+      ],
+      "assets": {
+        "red": "mock://modis/MODIS_DEMO_GR-2024-004_CONTEXT/red.tif",
+        "green": "mock://modis/MODIS_DEMO_GR-2024-004_CONTEXT/green.tif",
+        "blue": "mock://modis/MODIS_DEMO_GR-2024-004_CONTEXT/blue.tif",
+        "nir": "mock://modis/MODIS_DEMO_GR-2024-004_CONTEXT/nir.tif",
+        "swir": "mock://modis/MODIS_DEMO_GR-2024-004_CONTEXT/swir.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Coarse MODIS-style regional context only; not cluster-level validation."
+    }
+  ],
+  "GR-2024-005": [
+    {
+      "cluster_id": "GR-2024-005",
+      "item_id": "S2A_DEMO_GR-2024-005_PRE",
+      "collection": "sentinel-2-l2a",
+      "sensor_key": "sentinel-2",
+      "sensor": "Sentinel-2 L2A",
+      "role": "pre-fire",
+      "datetime": "2024-08-03T09:20:00Z",
+      "cloud_cover": 4.2,
+      "coverage": 0.99,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.85,
+              40.575
+            ],
+            [
+              24.229999999999997,
+              40.575
+            ],
+            [
+              24.229999999999997,
+              40.864999999999995
+            ],
+            [
+              23.85,
+              40.864999999999995
+            ],
+            [
+              23.85,
+              40.575
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        23.85,
+        40.575,
+        24.229999999999997,
+        40.864999999999995
+      ],
+      "assets": {
+        "visual": "mock://sentinel-2/S2A_DEMO_GR-2024-005_PRE/visual.tif",
+        "blue": "mock://sentinel-2/S2A_DEMO_GR-2024-005_PRE/blue.tif",
+        "green": "mock://sentinel-2/S2A_DEMO_GR-2024-005_PRE/green.tif",
+        "red": "mock://sentinel-2/S2A_DEMO_GR-2024-005_PRE/red.tif",
+        "nir": "mock://sentinel-2/S2A_DEMO_GR-2024-005_PRE/nir.tif",
+        "swir16": "mock://sentinel-2/S2A_DEMO_GR-2024-005_PRE/swir16.tif",
+        "swir22": "mock://sentinel-2/S2A_DEMO_GR-2024-005_PRE/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Low-cloud Sentinel-2 image before the inferred burn window; covers cluster footprint."
+    },
+    {
+      "cluster_id": "GR-2024-005",
+      "item_id": "S2A_DEMO_GR-2024-005_EVENT",
+      "collection": "sentinel-2-l2a",
+      "sensor_key": "sentinel-2",
+      "sensor": "Sentinel-2 L2A",
+      "role": "during-window",
+      "datetime": "2024-08-27T09:20:00Z",
+      "cloud_cover": 8.5,
+      "coverage": 0.99,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.85,
+              40.575
+            ],
+            [
+              24.229999999999997,
+              40.575
+            ],
+            [
+              24.229999999999997,
+              40.864999999999995
+            ],
+            [
+              23.85,
+              40.864999999999995
+            ],
+            [
+              23.85,
+              40.575
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        23.85,
+        40.575,
+        24.229999999999997,
+        40.864999999999995
+      ],
+      "assets": {
+        "visual": "mock://sentinel-2/S2A_DEMO_GR-2024-005_EVENT/visual.tif",
+        "blue": "mock://sentinel-2/S2A_DEMO_GR-2024-005_EVENT/blue.tif",
+        "green": "mock://sentinel-2/S2A_DEMO_GR-2024-005_EVENT/green.tif",
+        "red": "mock://sentinel-2/S2A_DEMO_GR-2024-005_EVENT/red.tif",
+        "nir": "mock://sentinel-2/S2A_DEMO_GR-2024-005_EVENT/nir.tif",
+        "swir16": "mock://sentinel-2/S2A_DEMO_GR-2024-005_EVENT/swir16.tif",
+        "swir22": "mock://sentinel-2/S2A_DEMO_GR-2024-005_EVENT/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Sentinel-2 event-window image intended for natural-colour/SWIR fire-front highlight review."
+    },
+    {
+      "cluster_id": "GR-2024-005",
+      "item_id": "S2B_DEMO_GR-2024-005_POST",
+      "collection": "sentinel-2-l2a",
+      "sensor_key": "sentinel-2",
+      "sensor": "Sentinel-2 L2A",
+      "role": "post-fire",
+      "datetime": "2024-09-14T09:20:00Z",
+      "cloud_cover": 6.8,
+      "coverage": 0.98,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.85,
+              40.575
+            ],
+            [
+              24.229999999999997,
+              40.575
+            ],
+            [
+              24.229999999999997,
+              40.864999999999995
+            ],
+            [
+              23.85,
+              40.864999999999995
+            ],
+            [
+              23.85,
+              40.575
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        23.85,
+        40.575,
+        24.229999999999997,
+        40.864999999999995
+      ],
+      "assets": {
+        "visual": "mock://sentinel-2/S2B_DEMO_GR-2024-005_POST/visual.tif",
+        "blue": "mock://sentinel-2/S2B_DEMO_GR-2024-005_POST/blue.tif",
+        "green": "mock://sentinel-2/S2B_DEMO_GR-2024-005_POST/green.tif",
+        "red": "mock://sentinel-2/S2B_DEMO_GR-2024-005_POST/red.tif",
+        "nir": "mock://sentinel-2/S2B_DEMO_GR-2024-005_POST/nir.tif",
+        "swir16": "mock://sentinel-2/S2B_DEMO_GR-2024-005_POST/swir16.tif",
+        "swir22": "mock://sentinel-2/S2B_DEMO_GR-2024-005_POST/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Low-cloud Sentinel-2 image after the inferred burn window; covers cluster footprint."
+    },
+    {
+      "cluster_id": "GR-2024-005",
+      "item_id": "LC09_DEMO_GR-2024-005_PRE",
+      "collection": "landsat-c2-l2",
+      "sensor_key": "landsat",
+      "sensor": "Landsat Collection 2 Level-2",
+      "role": "pre-fire",
+      "datetime": "2024-07-28T09:20:00Z",
+      "cloud_cover": 9.6,
+      "coverage": 1.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.85,
+              40.575
+            ],
+            [
+              24.229999999999997,
+              40.575
+            ],
+            [
+              24.229999999999997,
+              40.864999999999995
+            ],
+            [
+              23.85,
+              40.864999999999995
+            ],
+            [
+              23.85,
+              40.575
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        23.85,
+        40.575,
+        24.229999999999997,
+        40.864999999999995
+      ],
+      "assets": {
+        "blue": "mock://landsat/LC09_DEMO_GR-2024-005_PRE/blue.tif",
+        "green": "mock://landsat/LC09_DEMO_GR-2024-005_PRE/green.tif",
+        "red": "mock://landsat/LC09_DEMO_GR-2024-005_PRE/red.tif",
+        "nir08": "mock://landsat/LC09_DEMO_GR-2024-005_PRE/nir08.tif",
+        "swir16": "mock://landsat/LC09_DEMO_GR-2024-005_PRE/swir16.tif",
+        "swir22": "mock://landsat/LC09_DEMO_GR-2024-005_PRE/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Landsat fallback before the inferred burn window."
+    },
+    {
+      "cluster_id": "GR-2024-005",
+      "item_id": "LC09_DEMO_GR-2024-005_POST",
+      "collection": "landsat-c2-l2",
+      "sensor_key": "landsat",
+      "sensor": "Landsat Collection 2 Level-2",
+      "role": "post-fire",
+      "datetime": "2024-09-19T09:20:00Z",
+      "cloud_cover": 12.4,
+      "coverage": 1.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.85,
+              40.575
+            ],
+            [
+              24.229999999999997,
+              40.575
+            ],
+            [
+              24.229999999999997,
+              40.864999999999995
+            ],
+            [
+              23.85,
+              40.864999999999995
+            ],
+            [
+              23.85,
+              40.575
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        23.85,
+        40.575,
+        24.229999999999997,
+        40.864999999999995
+      ],
+      "assets": {
+        "blue": "mock://landsat/LC09_DEMO_GR-2024-005_POST/blue.tif",
+        "green": "mock://landsat/LC09_DEMO_GR-2024-005_POST/green.tif",
+        "red": "mock://landsat/LC09_DEMO_GR-2024-005_POST/red.tif",
+        "nir08": "mock://landsat/LC09_DEMO_GR-2024-005_POST/nir08.tif",
+        "swir16": "mock://landsat/LC09_DEMO_GR-2024-005_POST/swir16.tif",
+        "swir22": "mock://landsat/LC09_DEMO_GR-2024-005_POST/swir22.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Landsat fallback after the inferred burn window."
+    },
+    {
+      "cluster_id": "GR-2024-005",
+      "item_id": "MODIS_DEMO_GR-2024-005_CONTEXT",
+      "collection": "modis-demo-context",
+      "sensor_key": "modis",
+      "sensor": "MODIS surface reflectance",
+      "role": "during-window",
+      "datetime": "2024-08-28T09:20:00Z",
+      "cloud_cover": 18.0,
+      "coverage": 1.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.610000000000003,
+              40.335
+            ],
+            [
+              24.469999999999995,
+              40.335
+            ],
+            [
+              24.469999999999995,
+              41.105
+            ],
+            [
+              23.610000000000003,
+              41.105
+            ],
+            [
+              23.610000000000003,
+              40.335
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        23.610000000000003,
+        40.335,
+        24.469999999999995,
+        41.105
+      ],
+      "assets": {
+        "red": "mock://modis/MODIS_DEMO_GR-2024-005_CONTEXT/red.tif",
+        "green": "mock://modis/MODIS_DEMO_GR-2024-005_CONTEXT/green.tif",
+        "blue": "mock://modis/MODIS_DEMO_GR-2024-005_CONTEXT/blue.tif",
+        "nir": "mock://modis/MODIS_DEMO_GR-2024-005_CONTEXT/nir.tif",
+        "swir": "mock://modis/MODIS_DEMO_GR-2024-005_CONTEXT/swir.tif"
+      },
+      "source": "mock-stac",
+      "reason": "Coarse MODIS-style regional context only; not cluster-level validation."
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.52,
+              40.72
+            ],
+            [
+              26.48,
+              40.72
+            ],
+            [
+              26.48,
+              41.34
+            ],
+            [
+              25.52,
+              41.34
+            ],
+            [
+              25.52,
+              40.72
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cluster_id": "GR-2024-001",
+        "area_ha": 58200,
+        "month": 8,
+        "first_burn_date": "2023-08-23",
+        "burn_window_start": "2023-08-23",
+        "burn_window_end": "2023-08-23",
+        "fire_front_event_date": "2023-08-23",
+        "pre_search_start": "2023-07-09",
+        "pre_search_end": "2023-08-22",
+        "post_search_start": "2023-08-24",
+        "post_search_end": "2023-10-07",
+        "mean_confidence": 0.86,
+        "admin_region": "Eastern Macedonia and Thrace",
+        "dominant_landcover": "tree cover",
+        "landcover_ha": {
+          "tree_cover": 40800,
+          "shrub_grass": 12300,
+          "cropland": 5100
+        },
+        "population_exposure_proxy": 210,
+        "builtup_exposure_ha": 31.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.64,
+              38.089999999999996
+            ],
+            [
+              23.92,
+              38.089999999999996
+            ],
+            [
+              23.92,
+              38.27
+            ],
+            [
+              23.64,
+              38.27
+            ],
+            [
+              23.64,
+              38.089999999999996
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cluster_id": "GR-2024-002",
+        "area_ha": 24650,
+        "month": 7,
+        "first_burn_date": "2024-07-19",
+        "burn_window_start": "2024-07-14",
+        "burn_window_end": "2024-07-31",
+        "fire_front_event_date": null,
+        "pre_search_start": "2024-05-30",
+        "pre_search_end": "2024-07-13",
+        "post_search_start": "2024-08-01",
+        "post_search_end": "2024-09-14",
+        "mean_confidence": 0.74,
+        "admin_region": "Attica",
+        "dominant_landcover": "shrub / herbaceous",
+        "landcover_ha": {
+          "tree_cover": 4200,
+          "shrub_grass": 17100,
+          "cropland": 2100,
+          "built_up": 1250
+        },
+        "population_exposure_proxy": 1840,
+        "builtup_exposure_ha": 74.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.64,
+              37.585
+            ],
+            [
+              22.0,
+              37.585
+            ],
+            [
+              22.0,
+              37.775
+            ],
+            [
+              21.64,
+              37.775
+            ],
+            [
+              21.64,
+              37.585
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cluster_id": "GR-2024-003",
+        "area_ha": 31200,
+        "month": 8,
+        "first_burn_date": "2024-08-21",
+        "burn_window_start": "2024-08-16",
+        "burn_window_end": "2024-09-02",
+        "fire_front_event_date": null,
+        "pre_search_start": "2024-07-02",
+        "pre_search_end": "2024-08-15",
+        "post_search_start": "2024-09-03",
+        "post_search_end": "2024-10-17",
+        "mean_confidence": 0.69,
+        "admin_region": "Western Greece",
+        "dominant_landcover": "cropland",
+        "landcover_ha": {
+          "tree_cover": 9200,
+          "shrub_grass": 8700,
+          "cropland": 12900,
+          "built_up": 400
+        },
+        "population_exposure_proxy": 620,
+        "builtup_exposure_ha": 12.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.26,
+              39.160000000000004
+            ],
+            [
+              22.56,
+              39.160000000000004
+            ],
+            [
+              22.56,
+              39.32
+            ],
+            [
+              22.26,
+              39.32
+            ],
+            [
+              22.26,
+              39.160000000000004
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cluster_id": "GR-2024-004",
+        "area_ha": 19800,
+        "month": 9,
+        "first_burn_date": "2024-09-09",
+        "burn_window_start": "2024-09-04",
+        "burn_window_end": "2024-09-21",
+        "fire_front_event_date": null,
+        "pre_search_start": "2024-07-21",
+        "pre_search_end": "2024-09-03",
+        "post_search_start": "2024-09-22",
+        "post_search_end": "2024-11-05",
+        "mean_confidence": 0.81,
+        "admin_region": "Thessaly",
+        "dominant_landcover": "cropland",
+        "landcover_ha": {
+          "tree_cover": 2600,
+          "shrub_grass": 5900,
+          "cropland": 11000,
+          "built_up": 300
+        },
+        "population_exposure_proxy": 420,
+        "builtup_exposure_ha": 8.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.93,
+              40.655
+            ],
+            [
+              24.15,
+              40.655
+            ],
+            [
+              24.15,
+              40.785
+            ],
+            [
+              23.93,
+              40.785
+            ],
+            [
+              23.93,
+              40.655
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cluster_id": "GR-2024-005",
+        "area_ha": 9100,
+        "month": 8,
+        "first_burn_date": "2024-08-27",
+        "burn_window_start": "2024-08-22",
+        "burn_window_end": "2024-09-08",
+        "fire_front_event_date": null,
+        "pre_search_start": "2024-07-08",
+        "pre_search_end": "2024-08-21",
+        "post_search_start": "2024-09-09",
+        "post_search_end": "2024-10-23",
+        "mean_confidence": 0.77,
+        "admin_region": "Central Macedonia",
+        "dominant_landcover": "tree cover",
+        "landcover_ha": {
+          "tree_cover": 6900,
+          "shrub_grass": 1700,
+          "cropland": 500
+        },
+        "population_exposure_proxy": 95,
+        "builtup_exposure_ha": 4.1
+      }
+    }
+  ]
+}

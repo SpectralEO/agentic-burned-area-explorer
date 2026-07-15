@@ -1,0 +1,41 @@
+id: burned_area_accounting
+name: Burned Area Accounting
+description: Compute annual and monthly burned-area finding for an AOI and year.
+required_context:
+- aoi
+- year
+steps:
+- id: annual
+  tool: compute_annual_burned_area
+- id: monthly
+  tool: compute_monthly_burned_area
+- id: annual_card
+  tool: create_finding_card
+  uses: annual
+  card:
+    type: primary_finding
+    title: Annual burned-area estimate
+    pinned: false
+- id: monthly_card
+  tool: create_finding_card
+  uses: monthly
+  card:
+    type: primary_finding
+    title: Monthly burned-area summary
+    pinned: false
+suggested_next_actions:
+- id: show_largest_clusters
+  label: Show largest clusters
+  skill_id: burn_cluster_investigation
+- id: high_confidence_only
+  label: Recalculate high-confidence only
+  skill_id: burned_area_accounting
+  parameters:
+    confidence_mode: high
+- id: generate_report
+  label: Generate finding brief
+  skill_id: wildfire_finding_brief
+quality_checks:
+- source_dataset_present
+- method_statement_present
+- caveats_present

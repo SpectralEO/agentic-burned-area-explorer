@@ -1,0 +1,84 @@
+id: optical_imagery_finding
+name: Optical Imagery Finding
+description: Resolve sensor and composite intent, then find pre/post Sentinel-2, Landsat, or MODIS-style imagery finding for a selected burn cluster.
+required_context:
+- selected_cluster
+steps:
+- id: imagery
+  tool: search_optical_imagery
+  sensor: any
+  composite: true_color
+  max_cloud: 20
+  pre_days: 45
+  post_days: 45
+- id: imagery_card
+  tool: create_finding_card
+  uses: imagery
+  card:
+    type: supporting_finding
+    title: Optical imagery finding
+    pinned: false
+suggested_next_actions:
+- id: find_multisensor_false_colour
+  label: Sentinel-2 + Landsat quicklooks
+  skill_id: optical_imagery_finding
+  requires:
+  - selected_cluster
+  parameters:
+    sensor: any
+    composite: false_color
+- id: find_s2_true_colour
+  label: Sentinel-2 true colour
+  skill_id: optical_imagery_finding
+  requires:
+  - selected_cluster
+  parameters:
+    sensor: sentinel-2
+    composite: true_color
+- id: find_s2_false_colour
+  label: Sentinel-2 false colour
+  skill_id: optical_imagery_finding
+  requires:
+  - selected_cluster
+  parameters:
+    sensor: sentinel-2
+    composite: false_color
+- id: find_s2_fire_front
+  label: Sentinel-2 fire-front highlight
+  skill_id: optical_imagery_finding
+  requires:
+  - selected_cluster
+  parameters:
+    sensor: sentinel-2
+    composite: fire_front_highlight
+    event_date: '2023-08-23'
+- id: try_landsat_false_colour
+  label: Landsat fallback
+  skill_id: optical_imagery_finding
+  requires:
+  - selected_cluster
+  parameters:
+    sensor: landsat
+    composite: false_color
+- id: try_modis_context
+  label: MODIS context
+  skill_id: optical_imagery_finding
+  requires:
+  - selected_cluster
+  parameters:
+    sensor: modis
+    composite: fire_front_highlight
+- id: check_landcover
+  label: Check land-cover impact
+  skill_id: landcover_impact
+  requires:
+  - selected_cluster
+- id: generate_report
+  label: Generate finding brief
+  skill_id: wildfire_finding_brief
+quality_checks:
+- source_dataset_present
+- method_statement_present
+- caveats_present
+- burn_window_present
+- selected_pair_or_empty_result_explained

@@ -1,0 +1,21 @@
+id: wildfire_finding_brief
+name: Wildfire Finding Brief
+description: Generate a report from finding cards explicitly added to the report.
+required_context:
+- pinned_finding
+steps:
+- id: report
+  tool: generate_report_from_finding
+suggested_next_actions:
+- id: show_largest_clusters
+  label: Show largest clusters
+  skill_id: burn_cluster_investigation
+- id: find_before_after_imagery
+  label: Find imagery for selected cluster
+  skill_id: optical_imagery_finding
+  requires:
+  - selected_cluster
+quality_checks:
+- source_dataset_present
+- method_statement_present
+- caveats_present

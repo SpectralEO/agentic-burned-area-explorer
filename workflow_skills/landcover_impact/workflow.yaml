@@ -1,0 +1,33 @@
+id: landcover_impact
+name: Land-cover Impact
+description: Summarise land-cover classes affected by a selected burn cluster.
+required_context:
+- selected_cluster
+steps:
+- id: landcover
+  tool: compute_landcover_impact
+- id: landcover_card
+  tool: create_finding_card
+  uses: landcover
+  card:
+    type: contextual_finding
+    title: Land-cover impact summary
+    pinned: false
+suggested_next_actions:
+- id: find_before_after_imagery
+  label: Find before/after imagery
+  skill_id: optical_imagery_finding
+  requires:
+  - selected_cluster
+- id: add_ghsl
+  label: Add GHSL exposure proxy
+  skill_id: ghsl_exposure_context
+  requires:
+  - selected_cluster
+- id: generate_report
+  label: Generate finding brief
+  skill_id: wildfire_finding_brief
+quality_checks:
+- source_dataset_present
+- method_statement_present
+- caveats_present

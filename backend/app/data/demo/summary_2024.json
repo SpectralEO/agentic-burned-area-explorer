@@ -1,0 +1,72 @@
+{
+  "annual": {
+    "aoi": "greece",
+    "year": 2024,
+    "burned_area_ha": 334500,
+    "burned_area_km2": 3345,
+    "peak_month": 8,
+    "mean_confidence": 0.78
+  },
+  "monthly": [
+    {
+      "month": 1,
+      "burned_area_ha": 0,
+      "burned_area_km2": 0
+    },
+    {
+      "month": 2,
+      "burned_area_ha": 0,
+      "burned_area_km2": 0
+    },
+    {
+      "month": 3,
+      "burned_area_ha": 1800,
+      "burned_area_km2": 18
+    },
+    {
+      "month": 4,
+      "burned_area_ha": 4200,
+      "burned_area_km2": 42
+    },
+    {
+      "month": 5,
+      "burned_area_ha": 7600,
+      "burned_area_km2": 76
+    },
+    {
+      "month": 6,
+      "burned_area_ha": 13000,
+      "burned_area_km2": 130
+    },
+    {
+      "month": 7,
+      "burned_area_ha": 41000,
+      "burned_area_km2": 410
+    },
+    {
+      "month": 8,
+      "burned_area_ha": 154000,
+      "burned_area_km2": 1540
+    },
+    {
+      "month": 9,
+      "burned_area_ha": 88000,
+      "burned_area_km2": 880
+    },
+    {
+      "month": 10,
+      "burned_area_ha": 21000,
+      "burned_area_km2": 210
+    },
+    {
+      "month": 11,
+      "burned_area_ha": 3400,
+      "burned_area_km2": 34
+    },
+    {
+      "month": 12,
+      "burned_area_ha": 500,
+      "burned_area_km2": 5
+    }
+  ]
+}

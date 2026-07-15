@@ -1,0 +1,28 @@
+id: aod_context
+name: CAMS AOD Context
+description: Add atmospheric aerosol context around a selected burn cluster.
+required_context:
+- selected_cluster
+steps:
+- id: aod
+  tool: compute_aod_context
+- id: aod_card
+  tool: create_finding_card
+  uses: aod
+  card:
+    type: contextual_finding
+    title: CAMS AOD atmospheric context
+    pinned: false
+suggested_next_actions:
+- id: add_drought
+  label: Add drought context
+  skill_id: drought_context
+  requires:
+  - selected_cluster
+- id: generate_report
+  label: Generate finding brief
+  skill_id: wildfire_finding_brief
+quality_checks:
+- source_dataset_present
+- method_statement_present
+- caveats_present

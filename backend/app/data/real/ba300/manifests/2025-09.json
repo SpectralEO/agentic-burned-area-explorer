@@ -1,0 +1,45 @@
+{
+  "bands": {
+    "bf": "app/data/real/ba300/normalized/2025/09/bf_raw.tif",
+    "cp": "app/data/real/ba300/normalized/2025/09/cp_raw.tif",
+    "dob": "app/data/real/ba300/normalized/2025/09/dob.tif",
+    "lfp": "app/data/real/ba300/normalized/2025/09/lfp_raw.tif"
+  },
+  "checksums": {
+    "bf": "a1511dc56260fbbd8d95fb857a7e14c2e4d1771796c86cf2029193e68ef37365",
+    "cp": "bf20a360ba09909b444b55116e98768bdb3197ecd722ee05bd9ce2092ad98bbc",
+    "dob": "11691959b0033f8c65f7001bdca40fac85fee30dc4128a62a27ee901cdf6a537",
+    "lfp": "4344fe411caad2acb47a8af90ac40583ff71ef1d9eb39da2244ef85be12241e2"
+  },
+  "imported_at": "2026-06-20T10:32:06.396819+00:00",
+  "input": "app/data/real/inbox/ba300/2025/09",
+  "period": "2025-09",
+  "result": {
+    "active_mask_path": "app/data/real/ba300/clipped/GR/2025/09/active_mask.tif",
+    "bf_scaled_path": "app/data/real/ba300/clipped/GR/2025/09/bf_scaled.tif",
+    "burned_area_occurrence_ha": 4281.5566,
+    "burned_pixel_count": 1559,
+    "calculation_crs": "EPSG:3035",
+    "cluster_count": 311,
+    "clusters_path": "app/data/real/ba300/derived/GR/clusters.geojson",
+    "dob_path": "app/data/real/ba300/clipped/GR/2025/09/dob.tif",
+    "geography_id": "GR",
+    "ingested_at": "2026-06-20T10:32:03.142945+00:00",
+    "mean_bf": 0.333923,
+    "mean_cp": 0.500779,
+    "month": 9,
+    "multiband_path": "app/data/real/ba300/clipped/GR/2025/09/ba300_multiband.tif",
+    "period_end": "2025-09-30",
+    "period_start": "2025-09-01",
+    "pixel_area_m2": 82244.93135519374,
+    "processing_version": "ba300-real-v1",
+    "source_item_id": "c_gls_BA300-NTC_202509010000_GLOBE_S3_V4.0.1_cog",
+    "source_product": "CLMS BA300 monthly v4",
+    "source_version": "V4.0.1",
+    "unique_burned_surface_ha": 4281.5566,
+    "valid_pixel_count": 1597097,
+    "year": 2025
+  },
+  "source": "cdse-odata",
+  "source_item_id": "c_gls_BA300-NTC_202509010000_GLOBE_S3_V4.0.1_cog"
+}

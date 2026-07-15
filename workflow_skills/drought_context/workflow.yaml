@@ -1,0 +1,28 @@
+id: drought_context
+name: ERA5 Drought Context
+description: Add pre-fire environmental dryness context for a selected cluster.
+required_context:
+- selected_cluster
+steps:
+- id: drought
+  tool: compute_drought_context
+- id: drought_card
+  tool: create_finding_card
+  uses: drought
+  card:
+    type: contextual_finding
+    title: ERA5 pre-fire drought context
+    pinned: false
+suggested_next_actions:
+- id: add_aod
+  label: Add AOD context
+  skill_id: aod_context
+  requires:
+  - selected_cluster
+- id: generate_report
+  label: Generate finding brief
+  skill_id: wildfire_finding_brief
+quality_checks:
+- source_dataset_present
+- method_statement_present
+- caveats_present

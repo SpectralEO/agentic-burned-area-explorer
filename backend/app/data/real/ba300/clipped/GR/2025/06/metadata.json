@@ -1,0 +1,43 @@
+{
+  "active_mask_path": "app/data/real/ba300/clipped/GR/2025/06/active_mask.tif",
+  "bf_scaled_path": "app/data/real/ba300/clipped/GR/2025/06/bf_scaled.tif",
+  "burned_area_occurrence_ha": 2779.8787,
+  "burned_pixel_count": 868,
+  "calculation_crs": "EPSG:3035",
+  "cluster_count": 8,
+  "dob_path": "app/data/real/ba300/clipped/GR/2025/06/dob.tif",
+  "geography_id": "GR",
+  "ingested_at": "2026-06-20T10:35:15.930741+00:00",
+  "mean_bf": 0.389401,
+  "mean_cp": 0.792757,
+  "month": 6,
+  "multiband_path": "app/data/real/ba300/clipped/GR/2025/06/ba300_multiband.tif",
+  "period_end": "2025-06-30",
+  "period_start": "2025-06-01",
+  "pixel_area_m2": 82244.93135519374,
+  "processing_version": "ba300-real-v1",
+  "source_item_id": null,
+  "source_product": "CLMS BA300 monthly v4",
+  "source_version": "V4.0.1",
+  "unique_burned_surface_ha": 2779.8787,
+  "valid_pixel_count": 1597097,
+  "validation": {
+    "bf_scaled_range": [
+      -32.768001556396484,
+      0.9030000567436218
+    ],
+    "cp_scaled_range": [
+      -32.768001556396484,
+      0.9410000443458557
+    ],
+    "dob_range": [
+      -32768.0,
+      181.0
+    ],
+    "lfp_scaled_range": [
+      -32.768001556396484,
+      0.9940000176429749
+    ]
+  },
+  "year": 2025
+}

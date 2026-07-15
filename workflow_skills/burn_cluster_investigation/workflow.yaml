@@ -1,0 +1,79 @@
+id: burn_cluster_investigation
+name: Burn Cluster Investigation
+description: Rank burn clusters and summarise the selected cluster.
+required_context:
+- aoi
+- year
+steps:
+- id: ranked_clusters
+  tool: rank_burn_clusters
+  limit: 10
+- id: ranked_clusters_card
+  tool: create_finding_card
+  uses: ranked_clusters
+  card:
+    type: primary_finding
+    title: Ranked burn clusters
+    pinned: false
+- id: selected_cluster
+  tool: summarise_selected_cluster
+- id: selected_cluster_card
+  tool: create_finding_card
+  uses: selected_cluster
+  card:
+    type: primary_finding
+    title: Selected burn cluster summary
+    pinned: false
+suggested_next_actions:
+- id: find_multisensor_false_colour
+  label: Sentinel-2 + Landsat quicklooks
+  skill_id: optical_imagery_finding
+  requires:
+  - selected_cluster
+  parameters:
+    sensor: any
+    composite: false_color
+- id: find_s2_true_colour
+  label: Sentinel-2 true colour
+  skill_id: optical_imagery_finding
+  requires:
+  - selected_cluster
+  parameters:
+    sensor: sentinel-2
+    composite: true_color
+- id: find_s2_false_colour
+  label: Sentinel-2 false colour
+  skill_id: optical_imagery_finding
+  requires:
+  - selected_cluster
+  parameters:
+    sensor: sentinel-2
+    composite: false_color
+- id: find_s2_fire_front
+  label: Sentinel-2 fire-front highlight
+  skill_id: optical_imagery_finding
+  requires:
+  - selected_cluster
+  parameters:
+    sensor: sentinel-2
+    composite: fire_front_highlight
+    event_date: '2023-08-23'
+- id: check_landcover
+  label: Check land-cover impact
+  skill_id: landcover_impact
+  requires:
+  - selected_cluster
+- id: add_drought
+  label: Add drought context
+  skill_id: drought_context
+  requires:
+  - selected_cluster
+- id: add_aod
+  label: Add AOD context
+  skill_id: aod_context
+  requires:
+  - selected_cluster
+quality_checks:
+- source_dataset_present
+- method_statement_present
+- caveats_present
