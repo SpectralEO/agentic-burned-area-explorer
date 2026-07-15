@@ -1,8 +1,8 @@
 # Burned Area Explorer
 
-Burned Area Explorer is a prototype web application for exploring burned-area activity in Greece. It combines a React map interface, a FastAPI backend, deterministic workflow tools, compact BA300-derived analytics data, and a local raster tiler for STAC imagery.
+Burned Area Explorer is an agent-assisted web application for exploring burned-area activity in Greece. It combines a React map interface, a FastAPI backend, deterministic geospatial tools, compact BA300-derived analytics data, and a local raster tiler for STAC imagery.
 
-The app is designed for repeatable Earth Observation analysis. User prompts are routed to known workflows, and those workflows call explicit tools for burned-area summaries, cluster selection, optical imagery lookup, land-cover context, exposure context, drought context, aerosol context, and brief generation.
+The app uses an agentic workflow layer to turn natural-language prompts into map updates, analytics summaries, contextual overlays, and exportable finding briefs. Prompts are routed to known workflows that call explicit tools for burned-area summaries, cluster selection, optical imagery lookup, land-cover context, exposure context, drought context, aerosol context, and brief generation.
 
 ## What Is Included
 
@@ -15,6 +15,10 @@ The app is designed for repeatable Earth Observation analysis. User prompts are 
 - `docker-compose.yml`: One-command local runtime for frontend, backend, and tiler.
 
 Development-assistant files, local editor roles, generated caches, virtual environments, raw raster downloads, local databases, and build artifacts are not part of this package.
+
+## Agentic Workflow Layer
+
+Burned Area Explorer includes a lightweight agentic workflow layer. User prompts are matched to workflow intents, run through deterministic tools, and returned as structured finding cards, map layers, charts, or report-ready summaries. This keeps the experience conversational while keeping the analysis steps clear and repeatable.
 
 ## Quick Start With Docker Compose
 
@@ -69,7 +73,7 @@ uvicorn app.main:app --reload --port 8001
 
 ## Prototype Flow
 
-1. Start the app and wait for Burned Area Explorer to create an investigation.
+1. Start the app and wait for Burned Area Explorer to load the default analysis.
 2. Ask: `How much burned in Greece in 2025?`
 3. Use `Show largest clusters` to load the cluster layer.
 4. Select a cluster on the map.
